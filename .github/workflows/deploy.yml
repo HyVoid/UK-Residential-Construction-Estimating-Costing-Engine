@@ -7,11 +7,23 @@ on:
       - master
   workflow_dispatch:
 
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
-  contents: write
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
 
 jobs:
   build-and-deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
 
     steps:
@@ -22,20 +34,27 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          # Disabled npm Cache Setup: Removed the cache parameter to prevent:
-          # "Dependencies lock file is not found in /home/runner/work/. Supported file patterns: package-lock.json,npm-shrinkwrap.json,yarn.lock"
 
       - name: Install Dependencies
-        run: npm install
+        run: npm install --legacy-peer-deps
 
       - name: Build Web Application
-        # Vite base: './' is configured in vite.config.ts to produce clean relative resource URLs for GitHub Pages
+        # Vite base: './' is configured in vite.config.ts for clean relative URLs
         run: npm run build
 
-      - name: Deploy to gh-pages Branch
-        uses: peaceiris/actions-gh-pages@v4
+      - name: Create 404 fallback & disable Jekyll
+        run: |
+          cp dist/index.html dist/404.html
+          touch dist/.nojekyll
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
-          publish_branch: gh-pages
-          commit_message: "Automated deploy via GitHub Actions"
+          path: ./dist
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
