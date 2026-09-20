@@ -11,7 +11,7 @@
 > **Excel version: Paid with a 30-day money-back guarantee.**  
 > [🌐 Open the Free Browser-Based Construction Estimating App](#)
 >
-> [📥 Download the Professional Builders Estimating Excel Template](#)
+> [📥 Download the Professional Builders Estimating Excel Template](https://theseusworkshop.gumroad.com/l/arnghy)
 
 ---
 
