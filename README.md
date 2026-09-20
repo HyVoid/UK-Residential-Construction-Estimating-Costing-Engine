@@ -85,14 +85,6 @@ I build productized decision-support tools and lightweight operational models fo
 
 ---
 
-## Technical Details: Construction Template Architecture
-
-<details>
-<summary>For technical reviewers, Quantity Surveyors, and Excel practitioners</summary>
-
-### Workbook Architecture
-
-The system operates across four distinct functional layers across eight worksheets. Data flows strictly in one direction (Configuration $\rightarrow$ Master Data $\rightarrow$ Calculation $\rightarrow$ Output), eliminating circular references and safeguarding tender data integrity:
 
 ## Technical Details
 
@@ -364,9 +356,6 @@ $$\begin{aligned}
 
 ---
 
-<!-- ═══════════════════════════════════════ -->
-<!-- BUSINESS LOGIC & METHODOLOGY            -->
-<!-- ═══════════════════════════════════════ -->
 
 ## The Business Logic & Methodology
 
