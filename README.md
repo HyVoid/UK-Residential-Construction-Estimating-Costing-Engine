@@ -9,9 +9,9 @@
 > **No signup. No installation.**  
 > **Browser version: Free.**  
 > **Excel version: Paid with a 30-day money-back guarantee.**  
-> [🌐 Open the Free Browser-Based Construction Estimating App](#)
+> [🌐 Open the Free Browser-Based Construction Estimating App](https://hyvoid.github.io/uk-residential-costing-software/)
 >
-> [📥 Download the Professional Builders Estimating Excel Template](https://theseusworkshop.gumroad.com/l/arnghy)
+> [📥 Download the Professional Builders Estimating Excel Template](https://theseusworkshop.com/l/arnghy?utm_source=github&utm_medium=GitHub%20README)
 
 ---
 
@@ -39,7 +39,7 @@ Follow this workflow to generate accurate estimates and client-ready quotations 
 3. **Capture Site Logistics & Allowances**: Enter non-standard site commitments (e.g., scaffolding duration, waste skip hire, welfare setups) and client provisional sums (e.g., kitchen packages, sanitaryware allowances) in the `05_Adjustments` **site prelims calculator**.
 4. **Inspect Decision Views & Export**: Review internal margin hurdles and breakeven floors in `06_Internal_Estimate`, verify zero red-flag audits in `08_Checks`, and export the desensitized, client-ready quotation schedule from `07_Customer_Estimate` straight to PDF. 
 
-> **Ready to scale your quoting process?** After trying the browser version, [📥 Download the reusable Excel estimating template for unlimited tenders and lifetime offline access](#).
+> **Ready to scale your quoting process?** After trying the browser version, [📥 Download the reusable Excel estimating template for unlimited tenders and lifetime offline access](https://theseusworkshop.com/l/arnghy?utm_source=github&utm_medium=GitHub%20README).
 
 ---
 
@@ -75,7 +75,7 @@ This template acts as a lightweight ERP for construction professionals handling 
 
 *Not designed for*: Commercial high-rise civil engineering projects requiring full SMM7/NRM2 consultant bills of quantities, enterprise multi-user ERP accounting, or direct automated CAD/BIM polygon extraction.
 
-No spreadsheet expertise needed. Open the free browser app and start estimating immediately. Need the robust desktop version? [Buy the Professional Excel Estimating Template with a 30-day money-back guarantee](#).
+No spreadsheet expertise needed. Open the free browser app and start estimating immediately. Need the robust desktop version? [Buy the Professional Excel Estimating Template with a 30-day money-back guarantee](https://theseusworkshop.com/l/arnghy?utm_source=github&utm_medium=GitHub%20README).
 
 ---
 
